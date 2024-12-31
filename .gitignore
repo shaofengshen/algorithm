@@ -1,0 +1,14 @@
+# 忽略所有 Rust 项目中的 target 目录
+**/target/
+
+# 忽略所有的 Cargo.lock
+**/Cargo.lock
+
+# 忽略 Rust 备份文件
+**/*.rs.bk
+
+# 忽略 move-zeroes 中除了 src 和 Cargo.toml 之外的所有文件
+move-zeroes/*
+!move-zeroes/src/
+!move-zeroes/src/**
+!move-zeroes/Cargo.toml
