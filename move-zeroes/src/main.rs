@@ -1,3 +1,5 @@
+mod test_cases;
+
 struct Solution;
 
 impl Solution {
@@ -25,9 +27,23 @@ impl Solution {
 }
 
 fn main() {
-    let mut vec: Vec<i32> = vec![0, 1, 0, 3, 12];
-    Solution::move_zeroes(&mut vec);
-    println!("{:?}", vec);
+    for mut nums in test_cases::get_test_cases() {
+        println!("before: {:?}", nums);
+        Solution::move_zeroes(&mut nums);
+        println!("after: {:?}", nums);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_move_zeroes() {
+        let mut nums = vec![0, 1, 0, 3, 12];
+        Solution::move_zeroes(&mut nums);
+        assert_eq!(nums, vec![1, 3, 12, 0, 0]);
+    }
 }
 
 // 解题思路
