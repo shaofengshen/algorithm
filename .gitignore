@@ -12,3 +12,9 @@ move-zeroes/*
 !move-zeroes/src/
 !move-zeroes/src/**
 !move-zeroes/Cargo.toml
+
+# 忽略 remove_duplicates_from_sorted_array 中除了 src 和 Cargo.toml 之外的所有文件
+remove_duplicates_from_sorted_array/*
+!remove_duplicates_from_sorted_array/src/
+!remove_duplicates_from_sorted_array/src/**
+!remove_duplicates_from_sorted_array/Cargo.toml
