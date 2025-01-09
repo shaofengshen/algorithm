@@ -2,6 +2,6 @@
 
 《塞尔达传说》中的神庙。
 
-## remove-duplicates-from-sorted-array
+## remove_duplicates_from_sorted_array
 
 删除排序好的数组中重复的元素，返回新数组。
